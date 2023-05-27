@@ -74,7 +74,7 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
             c_filename = c_filename.replace("DUMMY", "dataset/wavlm")
             c = torch.load(c_filename).squeeze(0)
         else:
-            i = random.randint(68,92)
+            i = random.randint(68,72)
             '''
             basename = os.path.basename(filename)[:-4]
             spkname = basename[:4]
