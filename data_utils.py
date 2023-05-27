@@ -87,10 +87,7 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
             c_filename = c_filename.replace("DUMMY", "dataset/sr/wavlm")
             c = torch.load(c_filename).squeeze(0)
             
-        # 2023.01.10 update: code below can deteriorate model performance
-        # I added these code during cleaning up, thinking that it can offer better performance than my provided checkpoints, but actually it does the opposite.
-        # What an act of 'adding legs to a snake'!
-        '''
+      
         lmin = min(c.size(-1), spec.size(-1))
         spec, c = spec[:, :lmin], c[:, :lmin]
         audio_norm = audio_norm[:, :lmin*self.hop_length]
@@ -104,7 +101,7 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
         spec = spec[:, start:end]
         c = c[:, start:end]
         audio_norm = audio_norm[:, start*self.hop_length:end*self.hop_length]
-        '''
+        
         
         if self.use_spk:
             return c, spec, audio_norm, spk
