@@ -201,7 +201,7 @@ def get_hparams(init=True):
   if not os.path.exists(model_dir):
     os.makedirs(model_dir)
 
-  config_path = args.config
+  config_path = args['config']
   config_save_path = os.path.join(model_dir, "config.json")
   if init:
     with open(config_path, "r") as f:
