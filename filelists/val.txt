@@ -1,4 +1,4 @@
-dataset/sr/wavlm/voc_96.wav
-dataset/sr/wavlm/voc_97.wav
-dataset/sr/wavlm/voc_98.wav
-dataset/sr/wavlm/voc_99.wav
+dataset/sr/wavlm/taylor_speech/96.wav
+dataset/sr/wavlm/taylor_speech/97.wav
+dataset/sr/wavlm/taylor_speech/98.wav
+dataset/sr/wavlm/taylor_speech/99.wav
