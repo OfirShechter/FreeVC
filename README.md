@@ -93,6 +93,11 @@ CUDA_VISIBLE_DEVICES=0 python train.py -c configs/freevc.json -m freevc
 CUDA_VISIBLE_DEVICES=2 python train.py -c configs/freevc-s.json -m freevc-s
 ```
 
+# Notebook Quick Run
+locate in 'quick-run/Free_vc_any2one.ipynb'.
+download models and place them in models folder.
+store yout wav in data folder
+
 ## References
 
 - https://github.com/jaywalnut310/vits

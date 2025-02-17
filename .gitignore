@@ -3,4 +3,9 @@ DUMMY
 dataset
 logs
 outputs
+models/*
+!models/.gitkeep
+.history
 hifigan/generator_v1
+wavlm/WavLM-Large.pt
+data
